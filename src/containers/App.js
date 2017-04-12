@@ -9,7 +9,7 @@ import * as activePlayerActions from '../actions/ActivePlayerActions';
 class App extends Component {
     render() {
         const { activePlayer, field } = this.props;
-        const { setData } = this.props.fieldActions;
+        const { setData, setWinner } = this.props.fieldActions;
         const { setActivePlayer } = this.props.activePlayerActions;
 
 
@@ -22,9 +22,11 @@ class App extends Component {
                     <Player name='X' activePlayer={activePlayer.name} />
                 </div>
                 <Field data={field.data}
+                    winner={field.winner}
                     activePlayer={activePlayer.name}
                     setData={setData}
                     setActivePlayer={setActivePlayer}
+                    setWinner={setWinner}
                 />
             </div>
             

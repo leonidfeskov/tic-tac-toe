@@ -49,6 +49,51 @@ body {
     margin: 0 auto;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
+}
+
+.field_win:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #FFC107;
+}
+
+.field_win-row-1:after,
+.field_win-row-2:after,
+.field_win-row-3:after {
+    width: 100%;
+    margin-top: -3px;
+}
+.field_win-row-1:after {top: 17%;}
+.field_win-row-2:after {top: 50%;}
+.field_win-row-3:after {top: 83%;}
+
+.field_win-col-1:after,
+.field_win-col-2:after,
+.field_win-col-3:after {
+    height: 100%;
+    margin-left: -3px;
+}
+.field_win-col-1:after {left: 17%;}
+.field_win-col-2:after {left: 50%;}
+.field_win-col-3:after {left: 83%;}
+
+.field_win-diagonal-1:after {
+    width: 150%;
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+}
+
+.field_win-diagonal-2:after {
+    width: 150%;
+    transform-origin: 100% 0;
+    transform: rotate(-45deg);
+    left: auto;
+    right: 0;
 }
 
 .field__cell {
