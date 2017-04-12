@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import player from './player'
+import activePlayer from './activePlayer'
 import field from './field'
 
 export default combineReducers({
-    player,
+    activePlayer,
     field
 })
