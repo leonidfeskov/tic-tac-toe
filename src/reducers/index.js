@@ -1,13 +1,8 @@
-const initialState = {
-    activePlayer: 'X',
-    message: '',
-    field: [
-        [null, null, null],
-        [null, null, null],
-        [null, null, null]
-    ]
-};
+import { combineReducers } from 'redux'
+import player from './player'
+import field from './field'
 
-export default function userstate(state = initialState) {
-    return state;
-}
+export default combineReducers({
+    player,
+    field
+})
