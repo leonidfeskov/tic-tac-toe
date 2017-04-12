@@ -1,3 +1,6 @@
+import { SET_DATA } from '../constants/Field';
+
+
 const initialState = {
     data: [
         [null, null, null],
@@ -9,7 +12,7 @@ const initialState = {
 export default function field(state = initialState, action) {
 
     switch (action.type) {
-        case 'SET_DATA':
+        case SET_DATA:
             return { ...state, data: action.payload };
         default:
             return state;
