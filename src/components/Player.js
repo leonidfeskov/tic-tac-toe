@@ -4,8 +4,8 @@ export default class Player extends Component {
     render() {
         const { name, activePlayer } = this.props;
 
-        return <div className={'player' + (name === activePlayer ? ' player_active' : '')}>
-            Игрок: <span className={`player__name player__name_${name}`}>{name}</span>
+        return <div className={'player color-' + name + (name === activePlayer ? ' active' : '')}>
+            {name}
         </div>
     }
 }

@@ -22,7 +22,7 @@ const rootReducer = (state, action) => {
                     [null, null, null]
                 ],
                 winner: {
-                    line: undefined,
+                    line: [],
                     name: undefined
                 }
             }

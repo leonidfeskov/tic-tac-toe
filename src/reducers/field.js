@@ -8,7 +8,7 @@ const initialState = {
         [null, null, null]
     ],
     winner: {
-        line: undefined,
+        line: [],
         name: undefined
     }
 };
