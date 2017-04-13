@@ -25,6 +25,7 @@ body {
 }
 
 .player {
+    width: 130px;
     font-size: 30px;
     margin-bottom: 20px;
     border-bottom: 5px solid transparent;
@@ -121,3 +122,7 @@ body {
 .field__cell_X {color: #F44336;}
 .field__cell_O {color: #4CAF50;}
 
+.actions {
+    margin: 50px 0;
+    text-align: center;
+}
